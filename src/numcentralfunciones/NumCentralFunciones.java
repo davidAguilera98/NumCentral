@@ -2,8 +2,21 @@ package numcentralfunciones;
 
 import java.util.Scanner;
 
+/**
+ * Este codigo encuentra el numero central entre tres enteros
+ * 
+ * @author David
+ */
+
 public class NumCentralFunciones {
 
+    /**
+     * El método principal lee los números de entrada del usuario y llama al
+     * método central para calcular el número central.
+     *
+     * @param args Matriz de cadenas que contiene los argumentos de línea de
+     * comandos
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -21,6 +34,16 @@ public class NumCentralFunciones {
         }
     }
 
+    /**
+     * El método central coge tres números enteros como argumentos y devuelve el
+     * número central.
+     *
+     * @param numero1 El primer número entero.
+     * @param numero2 El segundo número entero.
+     * @param numero3 El tercer número entero.
+     * @return El número central de los tres números de entrada.
+     */
+    
     public static int central(int numero1, int numero2, int numero3) {
 
         int resultado;
@@ -37,4 +60,5 @@ public class NumCentralFunciones {
         }
         return resultado;
     }
+
 }
